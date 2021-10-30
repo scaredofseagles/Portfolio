@@ -15,30 +15,30 @@
 </head>
 <body >
       <ul id="header">
-        <li style="margin-right: auto; margin-left: 2em;">Menu</li>
+        <li id="menu" >Menu</li>
         <li>Dark Mode</li>
-        <li style="margin-left: auto; margin-right: 2em;"><i class="far fa-envelope fa-3x"></i> 
+        <li id="email"><i class="far fa-envelope fa-3x"></i> 
           <!-- <i class="far fa-envelope-open"></i>*/ -->
         </li>
       </ul>
 
       <div class="hero" id="home">
-       <p style="font-size: 84pt; margin: 0;"> <span>></span>./Dailey_Kaze</p>
-        <p style="font-size: 36pt; margin-left: auto; margin-top: 1em;"> <span>> </span>Full Stack Developer.exe</p>
+       <p class="x-large" style="margin: 0;"> <span>></span>./Dailey_Kaze</p>
+        <p class="medium" style="margin-left: auto; margin-top: 1em;"> <span>> </span>Full Stack Developer.exe</p>
 
         <p id="continue">Press q to continue ...</p>
       </div>
 
       <div id="projects">
-        <p style="font-size: 64pt; color: #00ff4b"> <span>></span> echo $Projects</p>
+        <p class="large" style=" color: #00ff4b; margin-bottom: .5em;"> <span>></span> echo $Projects</p>
         <div class="project-list">
-          <div class="project-card" style="box-shadow: -5px 10px #00ff4b;">
+          <div class="project-card left">
             <img src="https://via.placeholder.com/300x200" />
             <div class="project-info">
               <p>Project 1</p>
             </div>
           </div>
-          <div class="project-card" style="box-shadow: 5px 10px #00ff4b;">
+          <div class="project-card right" >
             <div class="project-info"> Project 2</div>
             <img style="margin-left: auto;" src="https://via.placeholder.com/300x200" />
           </div>
@@ -46,16 +46,19 @@
         </div>
 
         <button class="button" style="display: block; margin-left: auto; margin-right: auto;">View more on Github </button>
+      
       </div>
 
       <div id="about">
-        <p style="font-size: 64pt; color: #00ff4b"><span>></span> echo $About_Me</p>
-        <div>
-          <img />
-          <div>
-
-          </div>
+        <p class="large" style="color: #00ff4b"><span>></span> echo $About_Me</p>
+        <div class="about-grid">
+          <img src="https://via.placeholder.com/300"/>
+          
+            <p class="about-text small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper quis nisl at hendrerit. Vivamus luctus malesuada metus, non laoreet erat varius a. Phasellus pulvinar nibh vitae felis blandit pretium. Sed quis enim orci. Suspendisse in est non libero tincidunt porta id quis felis. Phasellus vitae consequat nisl. Phasellus dapibus purus vitae nibh rhoncus finibus. Integer cursus, enim mollis aliquet pretium, ante orci lobortis nibh, vel tempor quam eros ac quam. Aenean blandit magna quis lobortis vestibulum. Ut justo nisi, vulputate a aliquam id, lobortis a magna. Quisque consectetur efficitur est, ut scelerisque mi aliquam vulputate. Ut at viverra massa. Curabitur tincidunt sed nisi id dapibus. Nam imperdiet ex odio, ut interdum mauris sodales sit amet. Vestibulum vel libero eu magna eleifend tincidunt ut non arcu.</p>
+          
         </div>
+
+        <button class="button" style="display: block; margin: 2em auto">View more on LinkedIn </button>
 
       </div>
 
