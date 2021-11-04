@@ -20,72 +20,25 @@
 } */
 
 .cursor {
-    display: inline-block;
-      width: 24px;
-      height: 80%;
-      background-color: #00ff4b;
-      margin-left: 0;
-      animation: blink .6s linear infinite alternate;
+  display: inline-block;
+  width: 24px;
+  height: 80%;
+  background-color: #00ff4b;
+  margin-left: 0;
+  animation: blink .6s linear infinite alternate;
 }
 
 @keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
+  0% {
+    opacity: 1;
   }
-
-  .glitch {
-    color: white;
-    font-size: 100px;
-    position: relative;
-    width: 400px;
-    margin: 0 auto;
+  40% {
+    opacity: 1;
   }
-@keyframes noise-anim {
-    $steps: 20;
-    @for $i from 0 through $steps {
-        #{percentage($i*(1/$steps))} {
-        $top: random(100);
-        $bottom: random(101 - $top);
-        $topWithPercent: $top * 1%;
-        $bottomWithPercent: $bottom * 1%;
-        clip-path: inset(#{$topWithPercent} 0 #{$bottomWithPercent} 0);
-        }
-    }
-}
-.glitch::after {
-    content: attr(data-text);
-    position: absolute;
-    left: 2px;
-    text-shadow: -1px 0 red;
-    top: 0;
-    color: white;
-    background: black;
-    overflow: hidden;
-    animation: noise-anim 2s infinite linear alternate-reverse;
-}
-  
-@keyframes noise-anim-2 {
-    $steps: 20;
-    @for $i from 0 through $steps {
-      #{percentage($i*(1/$steps))} {
-        $top: random(100);
-        $bottom: random(101 - $top);
-        $topWithPercent: $top * 1%;
-        $bottomWithPercent: $bottom * 1%;
-        clip-path: inset(#{$topWithPercent} 0 #{$bottomWithPercent} 0);
-      }
-    }
-}
-.glitch::before {
-content: attr(data-text);
-position: absolute;
-left: -2px;
-text-shadow: 1px 0 blue;
-top: 0;
-color: white;
-background: black;
-overflow: hidden;
-animation: noise-anim-2 15s infinite linear alternate-reverse;
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }

@@ -328,6 +328,10 @@ a {
 }
 
 @media only screen and (min-width: 1024px){
+    #continue {
+        margin-bottom: 4em;
+    }
+    
     #projects {
         min-height: 0vh;
     }
@@ -363,11 +367,15 @@ a {
     }
 
     .x-large {
-        font-size: 13vw;
+        font-size: 10vw;
+    }
+
+    .medium {
+        font-size: 5vw;
     }
 
     .large {
-        font-size: 9vw;
+        font-size: 6vw;
     }
 
     .small {

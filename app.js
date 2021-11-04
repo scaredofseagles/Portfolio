@@ -7,7 +7,7 @@ const handleTyping = async () => {
     let i = 0;
 
     while (i < name.split("").length) {
-        await waitForMs(400);
+        await waitForMs(200);
         nameElem.append(nameLetters[i]);
         i++;
     };
@@ -25,13 +25,13 @@ const handleTyping = async () => {
         let i = 0;
     
         while (i < roleLetters.length) {
-            await waitForMs(200);
+            await waitForMs(100);
             elem.append(roleLetters[i]);
             i++;
         };
     
         document.getElementsByClassName("cursor")[0].remove();
-    }, 2500);    
+    }, 500);    
 };
 
 const waitForMs = (ms)  =>{
