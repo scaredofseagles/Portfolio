@@ -12,13 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-    <!-- <script src="https://cdn.socket.io/4.1.1/socket.io.min.js" integrity="sha384-cdrFIqe3RasCMNE0jeFG9xJHog/tgOVC1E9Lzve8LQN1g5WUHo0Kvk1mawWjxX7a" crossorigin="anonymous"></script> -->
 </head>
 <body >
       <ul id="header">
         <li id="menu" >Menu</li>
         <li>Dark Mode</li>
-        <li id="email"><i class="far fa-envelope fa-3x"></i> 
+        <li id="email"><a href="mailto:daileykaze@gmail.com"><i class="far fa-envelope fa-3x"></i> </a>
         </li>
       </ul>
 
@@ -33,32 +32,65 @@
         <p class="large" style=" color: #00ff4b; margin-bottom: .5em;"> <span>></span> echo $Projects</p>
         <div class="project-list">
           <div class="project-card left">
-            <img src="https://via.placeholder.com/300x200" />
+            <img src="./assets/passlock-screenshot.png" />
             <div class="project-info">
-              <p>Project 1</p>
+              <p class="project-title">Pass Lock</p>
+              <p class="project-desc">
+                A password manager that stores and generates strong passwords
+              </p>
+              <p class="project-tech">
+                React, Node.js, Express.js PostgresQL, Bcryptjs, Cryptojs
+              </p>
+              <div class="center-btn">
+                <a class="button" href="https://passlock.ca/" target="_blank">See it Deployed</a>
+                <a class="button" href="https://github.com/scaredofseagles/Pass-Lock" target="_blank">See the Repo</a>
+              </div>
+              
             </div>
           </div>
           <div class="project-card right" >
-            <div class="project-info"> Project 2</div>
-            <img style="margin-left: auto;" src="https://via.placeholder.com/300x200" />
+            <div class="project-info">
+              <p class="project-title">Project 2</p>
+              <p class="project-desc">
+                A password manager that stores and generates strong passwords
+              </p>
+              <p class="project-tech">
+                React, Node.js, Express.js PostgresQL, Bcryptjs, Cryptojs
+              </p>
+              <div class="center-btn">
+                <a class="button">See it Deployed</a>
+                <a class="button">See the Repo</a>
+              </div>
+              
+            </div>
+            <img  src="https://via.placeholder.com/300x200" />
           </div>
           
         </div>
 
-        <button class="button" style="display: block; margin-left: auto; margin-right: auto;">View more on Github </button>
+        <div class="center-btn"><a class="button" href="https://github.com/scaredofseagles/" target="_blank">View more on Github </a></div>
       
       </div>
 
       <div id="about">
         <p class="large" style="color: #00ff4b"><span>></span> echo $About_Me</p>
         <div class="about-grid">
-          <img src="https://via.placeholder.com/300"/>
+          <img src="./assets/2021-11-03 04.47.45 1.jpg"/>
           
-            <p class="about-text small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper quis nisl at hendrerit. Vivamus luctus malesuada metus, non laoreet erat varius a. Phasellus pulvinar nibh vitae felis blandit pretium. Sed quis enim orci. Suspendisse in est non libero tincidunt porta id quis felis. Phasellus vitae consequat nisl. Phasellus dapibus purus vitae nibh rhoncus finibus. Integer cursus, enim mollis aliquet pretium, ante orci lobortis nibh, vel tempor quam eros ac quam. Aenean blandit magna quis lobortis vestibulum. Ut justo nisi, vulputate a aliquam id, lobortis a magna. Quisque consectetur efficitur est, ut scelerisque mi aliquam vulputate. Ut at viverra massa. Curabitur tincidunt sed nisi id dapibus. Nam imperdiet ex odio, ut interdum mauris sodales sit amet. Vestibulum vel libero eu magna eleifend tincidunt ut non arcu.</p>
+            <p class="about-text small">
+              Full Stack Web Developer with over a year of experience in web development. I have experience in Full Stack technologies for
+              building websites and applications with React, Nodejs, Javascript, HTML/CSS, SQL and noSQL databases (MySQL, PostgresQL, and MongoDB).
+              <br />
+              <br />
+              Known as a great communicator and a team player motivated to help the team reach their goal whilst keeping a positive and enriching environment. Positioned to provide unique perspectives with user experience and people management in a fast-paced, quality-driven team to build cutting-edge web applications and software platforms.
+              <br />
+              <br />
+              Would like to know more about me? Find more info in my <a href="./assets/Resume - Dailey Kaze.pdf" target="_blank">resume</a>.
+            </p>
           
         </div>
 
-        <button class="button" style="display: block; margin: 2em auto">View more on LinkedIn </button>
+        <div class="center-btn"><a class="button" href="https://www.linkedin.com/in/daileykaze/" target="_blank">View more on LinkedIn </a></div>
 
       </div>
 
