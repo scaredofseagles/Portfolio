@@ -10,18 +10,29 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
-<body >
-      <ul id="header">
-        <li id="menu" >Menu</li>
+<body id="home">
+      <ul id="header" >
+
+        <div id="menu" class="dropdown">
+          <li><a onclick="showMenu()"><i class="fas fa-bars fa-3x"></i></a></li>
+          <div id="menu-dropdown" class="dropdown-content">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About Me</a>
+          </div>
+        </div>
+
         <li>Dark Mode</li>
         <li id="email"><a href="mailto:daileykaze@gmail.com"><i class="far fa-envelope fa-3x"></i> </a>
         </li>
       </ul>
 
-      <div class="hero" id="home">
+      
+
+      <div class="hero">
        <p class="x-large" style="margin: 0;">><span id='name'></span><span class="cursor"></span></p>
         <p class="medium" style="margin-left: auto; margin-top: 1em;"> > <span id="role"></span><span class="cursor"></span></p>
 
@@ -36,7 +47,7 @@
             <div class="project-info">
               <p class="project-title">Pass Lock</p>
               <p class="project-desc">
-                A password manager that stores and generates strong passwords
+                A password manager that stores and generates strong passwords.
               </p>
               <p class="project-tech">
                 React, Node.js, Express.js PostgresQL, Bcryptjs, Cryptojs
@@ -52,13 +63,14 @@
             <div class="project-info">
               <p class="project-title">Project 2</p>
               <p class="project-desc">
-                A password manager that stores and generates strong passwords
+                An anonymous forum to post statuses and like other users' statuses.
+                <i>Deployement Coming Soon</i>
               </p>
               <p class="project-tech">
-                React, Node.js, Express.js PostgresQL, Bcryptjs, Cryptojs
+                React, Node.js, Express.js PostgresQL
               </p>
               <div class="center-btn">
-                <a class="button">See it Deployed</a>
+                <!-- <a class="button">See it Deployed</a> -->
                 <a class="button">See the Repo</a>
               </div>
               
@@ -95,6 +107,9 @@
       </div>
 
     
+      <div class="top-icon">
+        <i class="far fa-arrow-alt-circle-up fa-5x"></i>
+      </div>
 
     
     <script src="app.js"></script>
