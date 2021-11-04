@@ -208,6 +208,32 @@ a {
 
 }
 
+.tooltip {
+    position: relative;
+}
+
+.tooltip:before {
+    content: attr(data-text); 
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:100%;
+    margin-bottom:15px; 
+    width:100px;
+    padding:10px;
+    border-radius:10px;
+    background:#000;
+    color: #fff;
+    text-align:center;
+    border: 1px solid #00ff4b;
+    display:none; 
+}
+
+.tooltip:hover:before {
+    display:block;
+}
+
+
 @media only screen and (max-width: 425px) {
     #header {
         min-width: 75vw;

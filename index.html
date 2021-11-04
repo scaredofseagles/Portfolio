@@ -12,21 +12,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
 </head>
 <body id="home">
       <ul id="header" >
 
-        <div id="menu" class="dropdown">
+        <div id="menu" class="dropdown tooltip" data-text="Menu">
           <li><a onclick="showMenu()"><i class="fas fa-bars fa-3x"></i></a></li>
           <div id="menu-dropdown" class="dropdown-content">
             <a href="#home">Home</a>
             <a href="#projects">Projects</a>
             <a href="#about">About Me</a>
+            <a href="./assets/Resume - Dailey Kaze.pdf" target="_blank">Resume</a>
           </div>
         </div>
 
-        <li>Dark Mode</li>
-        <li id="email"><a href="mailto:daileykaze@gmail.com"><i class="far fa-envelope fa-3x"></i> </a>
+        <!-- <li>Dark Mode</li> -->
+        <li id="email" class="tooltip" data-text="Email Me"><a href="mailto:daileykaze@gmail.com"><i class="far fa-envelope fa-3x"></i> </a>
         </li>
       </ul>
 
@@ -61,21 +63,20 @@
           </div>
           <div class="project-card right" >
             <div class="project-info">
-              <p class="project-title">Project 2</p>
+              <p class="project-title">Raspberry Pi Security Camera</p>
               <p class="project-desc">
-                An anonymous forum to post statuses and like other users' statuses.
-                <i>Deployement Coming Soon</i>
+                Homemade security camera using a PIR sensor and the Raspberry Pi Camera Module to capture images when movement is detected.
               </p>
               <p class="project-tech">
-                React, Node.js, Express.js PostgresQL
+                Node (w/ Express.js & PM2), Socket.io, Python 3, Bash, HTML/CSS
               </p>
               <div class="center-btn">
                 <!-- <a class="button">See it Deployed</a> -->
-                <a class="button">See the Repo</a>
+                <a class="button" href="https://github.com/scaredofseagles/pi-security-camera" target="_blank">See the Repo</a>
               </div>
               
             </div>
-            <img  src="https://via.placeholder.com/300x200" />
+            <img  src="./assets/pi-camera.png" />
           </div>
           
         </div>
