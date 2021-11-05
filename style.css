@@ -159,13 +159,8 @@ body {
 }
 
 .button:hover {
-    background-color:  #008327;
     border: 3px solid #008327;
-}
-
-.button:focus {
-    background-color:  #008327;
-    border: 3px solid #008327;
+    transform: scale(1.2,1.2);
 }
 
 #about {
